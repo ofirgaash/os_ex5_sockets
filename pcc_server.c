@@ -3,7 +3,6 @@
 #include <errno.h>
 #include <string.h>
 #include <signal.h>
-#include <stdatomic.h>
 
 #include <netinet/in.h>
 #include <arpa/inet.h>
@@ -14,7 +13,7 @@
 int DEBUG = 0;
 int BUFFER_LEN = 1024;
 
-atomic_int finish = 0;
+int finish = 0;
 
 uint64_t pcc_total[127];
 uint64_t pcc_tmp[127];

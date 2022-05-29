@@ -223,7 +223,7 @@ int main(int argc, char *argv[])
 
     // print pcc data
     for (i = 32; i < 127; i++)
-        printf("char '%c' : %u times\n", i, (uint32_t)pcc_total[i]);
+        printf("char '%c' : %lu times\n", i, pcc_total[i]);
     
 
     close(listenfd);

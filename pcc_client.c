@@ -92,7 +92,7 @@ int get_pcc(int sockfd, FILE *datafile_ptr)
     // recieve pcc & print
     sock_recv(sockfd, &net_pcc, sizeof(uint64_t));
     pcc = be64toh(net_pcc);
-    printf("# of printable characters: %u\n", (uint32_t)pcc);
+    printf("# of printable characters: %lu\n", pcc);
 
 
     return 0;
